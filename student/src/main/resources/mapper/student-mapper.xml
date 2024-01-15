@@ -8,5 +8,7 @@
 		insert into student_table(studentName, studentNumber,studentMobile)
 		values(#{studentName},#{studentNumber},#{studentMobile})
 	</insert>
-
+	<select id="findAll" resultType="com.example.student.dto.StudentDTO">
+		select * from student_table
+	</select>
 </mapper>
