@@ -23,4 +23,10 @@ public class StudentService {
 		return studentRepository.findAll();
 	}
 
+	public StudentDTO findById(Long id) {
+		// TODO Auto-generated method stub
+		return studentRepository.findById(id);
+	}
+
+
 }

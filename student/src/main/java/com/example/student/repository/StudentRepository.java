@@ -20,8 +20,10 @@ public class StudentRepository {
 	public List<StudentDTO> findAll() {
 		// TODO Auto-generated method stub
 		return sql.selectList("Student.findAll");
-		
 	}
 
-
+	public StudentDTO findById(Long id) {
+		// TODO Auto-generated method stub
+		return sql.selectOne("Student.findById",id);
+	}
 }
